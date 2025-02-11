@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+header {
+    background-color: darkgray;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: red;
+    height: 50px;
+}
+
+main {
+    background-color: blue;
+}
+
+footer {
+    background-color: green;
+}
