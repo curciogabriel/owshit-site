@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+/* nav bar */
 header {
     background-color: #eaeaea;
 }
@@ -16,6 +17,7 @@ header {
     justify-content: space-between;
     padding: 1.5rem 3rem;
     align-items: center;
+    margin-top: 30px;
 }
 
 .logo {
@@ -28,6 +30,10 @@ header {
     height: auto;
     margin-left: 20px;
     margin-right: 10px;
+}
+
+.whatsapp-text {
+    font-size: 13px;
 }
 
 .nav-list {
@@ -92,4 +98,137 @@ header {
     width: 24px;
     height: auto;
     margin-left: 20px;
+}
+
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* product grid */
+.products {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.product-card {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    padding: 80px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.product-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-container img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-image-container img:last-child {
+    opacity: 0;
+}
+
+.product-image-container:hover img:first-child {
+    opacity: 0;
+}
+
+.product-image-container:hover img:last-child {
+    opacity: 1;
+}
+
+.product-title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-prices {
+    margin: 5px 0;
+}
+
+.discounted-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.original-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background: darkgray;
 }
